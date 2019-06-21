@@ -17,6 +17,10 @@ call plug#end()
 
 set number
 
+"configure NERDtree
+let g:NERDTreeDirArrowExpandable = '+'
+let g:NERDTreeDirArrowCollapsible = '-'
+
 "shortcut fuzzy finder
 map ; :Files<CR>
 
