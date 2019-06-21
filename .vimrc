@@ -1,12 +1,12 @@
 call plug#begin('~/.vim/plugged')
-Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'scrooloose/nerdtree'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'ianks/vim-tsx'
-Plug 'mhinz/vim-signify'
-"Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter'
 Plug 'Quramy/tsuquyomi'
 Plug 'vim-airline/vim-airline'
 Plug 'prettier/vim-prettier', {
