@@ -32,7 +32,7 @@ let g:prettier#exec_cmd_path = "~/.nvm/versions/node/v8.9.3/lib/node_modules/.bi
 let g:prettier#quickfix_enabled = 0
 let g:prettier#exec_cmd_async = 1
 let g:prettier#autoformat = 0
-autocmd BufWritePre,TextChanged,InsertLeave *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+autocmd BufWritePre,InsertLeave *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
 " disbale arrow keys
 no <down> <Nop>
@@ -44,3 +44,7 @@ no <up> <Nop>
 :set expandtab
 :set tabstop=2
 :set shiftwidth=2
+
+" disable typescript-vim indentation
+let g:typescript_indent_disable = 1
+
